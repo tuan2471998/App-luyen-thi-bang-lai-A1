@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0DB6A9"
+                android:textAlignment="center"
+                app:titleTextColor="#FFFFFF"
+                app:title="Biển báo đường bộ">
+
+            </android.support.v7.widget.Toolbar>
+            <Button
+                android:id="@+id/button_BienBaoCam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="BIỂN BÁO CẤM"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <Button
+                android:id="@+id/button_BienBaoHieuLenh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="BIỆN BẢO HIỆU LỆNH"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_BienBaoCam" />
+
+            <Button
+                android:id="@+id/button_BienBaoNguyHiem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="BIỂN BÁO NGUY HIỂM"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_BienBaoHieuLenh" />
+
+            <Button
+                android:id="@+id/button_BienBaoPhu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="BIỂN BÁO PHỤ"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_BienBaoNguyHiem" />
+
+            <Button
+                android:id="@+id/button_BienBaoChiDan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="BIỂN BÁO CHỈ DẪN"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_BienBaoPhu" />
+
+            <Button
+                android:id="@+id/button_VachKeDuong"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="VẠCH KẺ ĐƯỜNG"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_BienBaoChiDan" />
+
+            <Button
+                android:id="@+id/button_DuongCaoToc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="ĐƯỜNG CAO TỐC"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_VachKeDuong" />
+
+            <Button
+                android:id="@+id/button_TuyenDuongDoiNgoai"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="TUYẾN ĐƯỜNG ĐỐI NGOẠI"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_DuongCaoToc" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

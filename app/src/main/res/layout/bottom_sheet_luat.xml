@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TieuDe_DanhSachLuat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách luật"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="#0DB6A9"
+        android:gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/button_XeDap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xe đạp, xe đạp máy, xe thô sơ"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/TieuDe_DanhSachLuat"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/button_MoTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xe mô tô, xe gắn máy"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/button_XeDap"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/button_Khac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Các sai phạm khác"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/button_MoTo"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/button_DacBiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trường hợp đặc biệt"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/button_Khac"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

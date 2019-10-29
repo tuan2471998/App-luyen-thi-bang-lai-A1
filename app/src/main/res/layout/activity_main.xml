@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thientuan.myapplication.MainActivity">
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FFFF">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="#0DB6A9"
+            android:textAlignment="center"
+            app:titleTextColor="#FFFFFF"
+            app:title="Luyện thi trắc nghiệm bằng lái A1"
+            android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+
+        <ImageButton
+            android:id="@+id/imageButton_hocbaimoi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="44dp"
+            android:background="#FFFF"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_hocbai" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imageButton_hocbaimoi"
+            android:layout_below="@id/imageButton_hocbaimoi"
+            android:text="Học bài mới"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_bienbao"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageButton_hocbaimoi"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#FFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_bienbao" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/imageButton_bienbao"
+            android:layout_below="@id/imageButton_bienbao"
+            android:text="Biển báo đường bộ"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_luat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFF"
+            android:layout_below="@id/textView2"
+            android:layout_alignLeft="@id/textView2"
+            android:src="@drawable/icon_luat"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/imageButton_luat"
+            android:layout_below="@id/imageButton_luat"
+            android:text="Luật"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_deluyenthi"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFF"
+            android:layout_below="@id/textView3"
+            android:layout_alignLeft="@id/textView3"
+            android:src="@drawable/icon_test"/>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@id/imageButton_deluyenthi"
+            android:layout_below="@id/imageButton_deluyenthi"
+            android:text="Đề luyện thi"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

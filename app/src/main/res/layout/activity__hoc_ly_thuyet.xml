@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0DB6A9"
+            android:textAlignment="center"
+            app:titleTextColor="#FFFFFF"
+            app:title="Học lý thuyết">
+
+        </android.support.v7.widget.Toolbar>
+            <Button
+                android:id="@+id/button_KhaiNiemVaQuyTac"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="KHÁI NIỆM VÀ QUY TẮC"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <Button
+                android:id="@+id/button_HeThongBienBaoDuongBo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="HỆ THỐNG BIẾN BÁO ĐƯỜNG BỘ"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_KhaiNiemVaQuyTac" />
+
+            <Button
+                android:id="@+id/button_SaHinh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="SA HÌNH"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_HeThongBienBaoDuongBo" />
+
+            <Button
+                android:id="@+id/button_DaoDuc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#ccd7f6"
+                android:gravity="center"
+                android:text="ĐẠO ĐỨC LÁI XE"
+                android:textAlignment="center"
+                android:textColor="#F000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/button_SaHinh" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
