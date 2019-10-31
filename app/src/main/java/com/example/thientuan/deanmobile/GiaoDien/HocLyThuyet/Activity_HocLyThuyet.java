@@ -1,17 +1,19 @@
-package com.example.thientuan.deanmobile;
+package com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
-public class Activity_BienBaoDuongBo extends AppCompatActivity {
+import com.example.thientuan.deanmobile.R;
 
-    Toolbar toolbar;
+public class Activity_HocLyThuyet extends AppCompatActivity {
+
+    android.support.v7.widget.Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__bien_bao_duong_bo);
+        setContentView(R.layout.activity__hoc_ly_thuyet);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -20,6 +22,8 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow);
     }
+
+    //Button bien bao cam
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

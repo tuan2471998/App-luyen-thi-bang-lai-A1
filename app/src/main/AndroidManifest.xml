@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_HocLyThuyet" />
-        <activity android:name=".Activity_BienBaoDuongBo" />
-        <activity android:name=".Activity_Luat"></activity>
+        <activity android:name=".GiaoDien.HocLyThuyet.Activity_HocLyThuyet" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo" />
+        <activity android:name=".GiaoDien.Luat.Activity_Luat" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoCam"></activity>
     </application>
 
 </manifest>

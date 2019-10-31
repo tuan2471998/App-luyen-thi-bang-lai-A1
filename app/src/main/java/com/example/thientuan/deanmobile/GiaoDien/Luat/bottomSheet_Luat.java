@@ -1,4 +1,4 @@
-package com.example.thientuan.deanmobile;
+package com.example.thientuan.deanmobile.GiaoDien.Luat;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,8 @@ import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.thientuan.deanmobile.R;
 
 /**
  * Created by ThienTuan on 24/10/2019.

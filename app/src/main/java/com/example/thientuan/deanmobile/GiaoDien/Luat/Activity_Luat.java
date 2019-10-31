@@ -1,10 +1,12 @@
-package com.example.thientuan.deanmobile;
+package com.example.thientuan.deanmobile.GiaoDien.Luat;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.thientuan.deanmobile.R;
 
 public class Activity_Luat extends AppCompatActivity {
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat">
+    tools:context="com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoCam">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,18 +14,24 @@
         android:background="#0DB6A9"
         android:textAlignment="center"
         app:titleTextColor="#FFFFFF"
-        app:title="Tra cứu luật">
+        app:title="Biển báo cấm">
 
     </android.support.v7.widget.Toolbar>
 
-    <Button
-        android:id="@+id/button_bottom_sheet_luat"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Danh sách luật"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
-        android:background="#0DB6A9"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </ListView>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

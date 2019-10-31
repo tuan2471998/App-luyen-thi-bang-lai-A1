@@ -9,10 +9,13 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.support.v7.widget.ToolbarWidgetWrapper;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
+import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
+import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton_hocbaimoi;
     ImageButton imageButton_bienbao;
     ImageButton imageButton_luat;
-
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
