@@ -1,6 +1,8 @@
 package com.example.thientuan.deanmobile;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
 import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
@@ -24,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton_bienbao;
     ImageButton imageButton_luat;
     Toolbar toolbar;
+    Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,4 +94,29 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    boolean doubleBackToExit = false;
+
+    public void onBackPressed(){
+
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else {
+            if (doubleBackToExit) {
+                super.onBackPressed();
+                return;
+            }
+            this.doubleBackToExit = true;
+            Toast.makeText(this, "Bấm lần nữa để thoát", Toast.LENGTH_SHORT).show();
+
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    doubleBackToExit = false;
+                }
+            }, 2000);
+        }
+    }
+
 }
