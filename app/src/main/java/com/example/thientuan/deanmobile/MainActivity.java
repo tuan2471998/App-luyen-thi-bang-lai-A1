@@ -1,6 +1,5 @@
 package com.example.thientuan.deanmobile;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -27,12 +26,15 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton_bienbao;
     ImageButton imageButton_luat;
     Toolbar toolbar;
-    Dialog dialog;
+    DBHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        dbHelper=new DBHelper(MainActivity.this);
 
         //Navigation Menu
         drawerLayout = findViewById(R.id.drawer_layout);

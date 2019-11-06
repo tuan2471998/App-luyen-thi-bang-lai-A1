@@ -14,4 +14,25 @@ public class User_BienBaoCam {
         this.noidung = noidung;
         this.loaibien = loaibien;
     }
+
+    public  int getAnh(){
+        return anh;
+    }
+    public void setAnh(int anh){
+        this.anh = anh;
+    }
+
+    public String getNoidung(){
+        return noidung;
+    }
+    public void setNoidung(String noidung){
+        this.noidung = noidung;
+    }
+
+    public int getLoaibien(){
+        return loaibien;
+    }
+    public void setLoaibien(int loaibien){
+        this.loaibien = loaibien;
+    }
 }
