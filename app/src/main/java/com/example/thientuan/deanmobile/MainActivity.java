@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.thientuan.deanmobile.Database.DBHelper_BienBaoCam;
 import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
 import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
 import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton_bienbao;
     ImageButton imageButton_luat;
     Toolbar toolbar;
-    DBHelper dbHelper;
+    DBHelper_BienBaoCam dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        dbHelper=new DBHelper(MainActivity.this);
+        dbHelper=new DBHelper_BienBaoCam(MainActivity.this);
 
         //Navigation Menu
         drawerLayout = findViewById(R.id.drawer_layout);

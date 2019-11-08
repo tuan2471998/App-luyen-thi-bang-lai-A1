@@ -89,9 +89,4 @@ public class DBHelper_BienBaoCam {
         }
         return arrayList;
     }
-//    public void insertBienBao(User_BienBaoCam){
-//        db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
-//        ContentValues contentValues = new ContentValues();
-//        contentValues.put("anh",);
-//    }
 }
