@@ -80,11 +80,11 @@ public class DBHelper_BienBaoCam {
 
         Cursor cursor  = db.rawQuery(sql ,null);
         while (cursor.moveToNext()){
-            int anh = cursor.getInt(0);
-            String noidung = cursor.getString(1);
-            int loaibien = cursor.getInt(2);
+            String noidung = cursor.getString(0);
+            int loaibien = cursor.getInt(1);
+            byte[] hinhanh = cursor.getBlob(2);
 
-            arrayList.add(new BienBaoCam(anh,noidung,loaibien));
+            arrayList.add(new BienBaoCam(noidung,loaibien,hinhanh));
         }
         return arrayList;
     }

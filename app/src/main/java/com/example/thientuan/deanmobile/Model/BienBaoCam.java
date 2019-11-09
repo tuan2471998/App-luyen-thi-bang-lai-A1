@@ -5,22 +5,14 @@ package com.example.thientuan.deanmobile.Model;
  */
 
 public class BienBaoCam {
-    private byte[] anh;
     private String noidung;
     private int loaibien;
+    private byte[] hinhanh;
 
-    public BienBaoCam(byte[] anh, String noidung, int loaibien) {
-        this.anh = anh;
+    public BienBaoCam(String noidung, int loaibien, byte[] hinhanh) {
         this.noidung = noidung;
         this.loaibien = loaibien;
-    }
-
-    public byte[] getAnh() {
-        return anh;
-    }
-
-    public void setAnh(byte[] anh) {
-        this.anh = anh;
+        this.hinhanh = hinhanh;
     }
 
     public String getNoidung() {
@@ -37,5 +29,13 @@ public class BienBaoCam {
 
     public void setLoaibien(int loaibien) {
         this.loaibien = loaibien;
+    }
+
+    public byte[] getHInhanh() {
+        return hinhanh;
+    }
+
+    public void setAnh(byte[] hinhanh) {
+        this.hinhanh = hinhanh;
     }
 }
