@@ -1,12 +1,11 @@
 package com.example.thientuan.deanmobile.Database;
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
-import com.example.thientuan.deanmobile.Model.User_BienBaoCam;
+import com.example.thientuan.deanmobile.Model.BienBaoCam;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -72,8 +71,8 @@ public class DBHelper_BienBaoCam {
     private String getPathDatabaseSystem() {
         return context.getApplicationInfo().dataDir + DB_PATH_SUFFIX + DATABASE_NAME;
     }
-    public ArrayList<User_BienBaoCam> getAllBienBaoCam(){
-        ArrayList<User_BienBaoCam> arrayList = new ArrayList<>();
+    public ArrayList<BienBaoCam> getAllBienBaoCam(){
+        ArrayList<BienBaoCam> arrayList = new ArrayList<>();
 
         db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
 
@@ -85,7 +84,7 @@ public class DBHelper_BienBaoCam {
             String noidung = cursor.getString(1);
             int loaibien = cursor.getInt(2);
 
-            arrayList.add(new User_BienBaoCam(anh,noidung,loaibien));
+            arrayList.add(new BienBaoCam(anh,noidung,loaibien));
         }
         return arrayList;
     }
