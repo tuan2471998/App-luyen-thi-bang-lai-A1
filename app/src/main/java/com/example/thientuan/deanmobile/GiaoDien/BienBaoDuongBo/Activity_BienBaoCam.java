@@ -20,8 +20,7 @@ public class Activity_BienBaoCam extends AppCompatActivity {
 
     public ArrayList<User_BienBaoCam> getData(){
         ArrayList<User_BienBaoCam> user =new ArrayList<>();
-
-
+        
 
         return user;
     }
