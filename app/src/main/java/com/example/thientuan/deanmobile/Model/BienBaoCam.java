@@ -1,5 +1,13 @@
 package com.example.thientuan.deanmobile.Model;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
+import java.io.IOException;
+import java.io.InputStream;
+
 /**
  * Created by ThienTuan on 09/11/2019.
  */
@@ -31,11 +39,11 @@ public class BienBaoCam {
         this.loaibien = loaibien;
     }
 
-    public byte[] getHInhanh() {
+    public byte[] getHinhanh() {
         return hinhanh;
     }
 
-    public void setAnh(byte[] hinhanh) {
+    public void setHinhanh(byte[] hinhanh) {
         this.hinhanh = hinhanh;
     }
 }

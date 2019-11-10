@@ -45,10 +45,8 @@ public class BienBaoCam_Adapter extends ArrayAdapter<BienBaoCam> {
 
         ImageView img = convertView.findViewById(R.id.image_bienbaocam);
         TextView txt_noidung = convertView.findViewById(R.id.tv_noidung);
-//        TextView txt_loaibien = convertView.findViewById(R.id.tv_loaibienbao);
+        TextView txt_loaibien = convertView.findViewById(R.id.tv_loaibienbao);
         txt_noidung.setText(arrayList.get(position).getNoidung());
-        Bitmap bitmap = BitmapFactory.decodeByteArray(arrayList.get(position).getAnh(), 0, arrayList.get(position).getAnh().length);
-
         return convertView;
     }
 }
