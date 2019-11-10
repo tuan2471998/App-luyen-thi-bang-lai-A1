@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,17 +10,17 @@
         <ImageView
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:id="@+id/img_bienbaocam"
+            android:id="@+id/img_bienbaohieulenh"
             android:src="@drawable/bienbaocam_bopcoi" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/noidung_bienbaocam"
+            android:id="@+id/noidung_bienbaohieulenh"
             android:padding="10dp"
             android:textSize="20dp"
             android:textColor="@android:color/black"
-            android:layout_toRightOf="@id/img_bienbaocam" />
+            android:layout_toRightOf="@id/img_bienbaohieulenh" />
 
     </RelativeLayout>
 

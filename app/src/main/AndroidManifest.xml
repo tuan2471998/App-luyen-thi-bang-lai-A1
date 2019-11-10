@@ -19,7 +19,10 @@
         <activity android:name=".GiaoDien.HocLyThuyet.Activity_HocLyThuyet" />
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo" />
         <activity android:name=".GiaoDien.Luat.Activity_Luat" />
-        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoCam"></activity>
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoCam" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoNguyHiem" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoHieuLenh" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoChiDan"></activity>
     </application>
 
 </manifest>

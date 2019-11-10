@@ -13,6 +13,9 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
 
     Toolbar toolbar;
     private Button button_BienBaoCam;
+    private Button button_BienBaoNguyHiem;
+    private Button button_BienBaoHieuLenh;
+    private Button button_BienBaoChiDan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,32 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
             }
         });
 
+        button_BienBaoNguyHiem=(Button) findViewById(R.id.button_BienBaoNguyHiem);
+        button_BienBaoNguyHiem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_bienbaonguyhiem = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoNguyHiem.class);
+                startActivity(acti_bienbaonguyhiem);
+            }
+        });
+
+        button_BienBaoHieuLenh = (Button) findViewById(R.id.button_BienBaoHieuLenh);
+        button_BienBaoHieuLenh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_bienbaohieulenh = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoHieuLenh.class);
+                startActivity(acti_bienbaohieulenh);
+            }
+        });
+
+        button_BienBaoChiDan = (Button) findViewById(R.id.button_BienBaoChiDan);
+        button_BienBaoChiDan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_bienbaochidan = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoChiDan.class);
+                startActivity(acti_bienbaochidan);
+            }
+        });
     }
 
 
