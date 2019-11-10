@@ -76,15 +76,14 @@ public class DBHelper_BienBaoCam {
 
         db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
 
-        String sql = "SELECT * FROM BIENBAO";
+        String sql = "select * from BIENBAO where loaibien = 2";
 
         Cursor cursor  = db.rawQuery(sql ,null);
         while (cursor.moveToNext()){
             String noidung = cursor.getString(0);
             int loaibien = cursor.getInt(1);
-            byte[] hinhanh = cursor.getBlob(2);
 
-            arrayList.add(new BienBaoCam(noidung,loaibien,hinhanh));
+            arrayList.add(new BienBaoCam(noidung,loaibien));
         }
         return arrayList;
     }

@@ -22,6 +22,7 @@ public class Activity_BienBaoCam extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity__bien_bao_cam);
 
         db = new DBHelper_BienBaoCam(Activity_BienBaoCam.this);
 
@@ -34,6 +35,5 @@ public class Activity_BienBaoCam extends AppCompatActivity {
         listView.setAdapter(bienBaoCam_adapter);
 
         registerForContextMenu(listView);
-
     }
 }

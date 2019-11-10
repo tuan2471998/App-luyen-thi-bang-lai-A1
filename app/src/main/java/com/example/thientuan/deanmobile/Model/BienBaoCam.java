@@ -15,12 +15,10 @@ import java.io.InputStream;
 public class BienBaoCam {
     private String noidung;
     private int loaibien;
-    private byte[] hinhanh;
 
-    public BienBaoCam(String noidung, int loaibien, byte[] hinhanh) {
+    public BienBaoCam(String noidung, int loaibien) {
         this.noidung = noidung;
         this.loaibien = loaibien;
-        this.hinhanh = hinhanh;
     }
 
     public String getNoidung() {
@@ -37,13 +35,5 @@ public class BienBaoCam {
 
     public void setLoaibien(int loaibien) {
         this.loaibien = loaibien;
-    }
-
-    public byte[] getHinhanh() {
-        return hinhanh;
-    }
-
-    public void setHinhanh(byte[] hinhanh) {
-        this.hinhanh = hinhanh;
     }
 }

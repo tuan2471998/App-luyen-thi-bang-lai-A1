@@ -29,7 +29,7 @@ public class BienBaoCam_Adapter extends ArrayAdapter<BienBaoCam> {
     ArrayList<BienBaoCam> arrayList;
 
     public BienBaoCam_Adapter(Context context, int resource, ArrayList<BienBaoCam> object){
-        super(context, 0, object);
+        super(context, resource, object);
         this.context = context;
         this.layout = resource;
         this.arrayList = object;
@@ -43,10 +43,10 @@ public class BienBaoCam_Adapter extends ArrayAdapter<BienBaoCam> {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         convertView = layoutInflater.inflate(R.layout.layout_row_bienbaocam, null);
 
-        ImageView img = convertView.findViewById(R.id.image_bienbaocam);
-        TextView txt_noidung = convertView.findViewById(R.id.tv_noidung);
-        TextView txt_loaibien = convertView.findViewById(R.id.tv_loaibienbao);
+        TextView txt_noidung = convertView.findViewById(R.id.noidung_bienbaocam);
+
         txt_noidung.setText(arrayList.get(position).getNoidung());
+
         return convertView;
     }
 }
