@@ -6,8 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
 import com.example.thientuan.deanmobile.Model.BienBaoCam;
-import com.example.thientuan.deanmobile.Model.BienBaoHieuLenh;
-import com.example.thientuan.deanmobile.Model.BienBaoNguyHiem;
+import com.example.thientuan.deanmobile.Model.BienBaoPhu;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -16,18 +15,17 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 /**
- * Created by J Nguyen on 11/10/2019.
+ * Created by J Nguyen on 11/11/2019.
  */
 
-public class DBHelper_BienBaoHieuLenh {
-
+public class DBHelper_BienBaoPhu {
     String DATABASE_NAME = "TN_A1.db";
     private static final String DB_PATH_SUFFIX = "/databases/";
     SQLiteDatabase db = null;
 
     Context context;
 
-    public DBHelper_BienBaoHieuLenh(Context context) {
+    public DBHelper_BienBaoPhu(Context context) {
         this.context = context;
         processSQLite();
     }
@@ -77,19 +75,19 @@ public class DBHelper_BienBaoHieuLenh {
     private String getPathDatabaseSystem() {
         return context.getApplicationInfo().dataDir + DB_PATH_SUFFIX + DATABASE_NAME;
     }
-    public ArrayList<BienBaoHieuLenh> getAllBienBaoHieuLenh(){
-        ArrayList<BienBaoHieuLenh> arrayList = new ArrayList<>();
+    public ArrayList<BienBaoPhu> getAllBienBaoPhu(){
+        ArrayList<BienBaoPhu> arrayList = new ArrayList<>();
 
         db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
 
-        String sql = "select * from ChiTiet_BienBao where id = 3";
+        String sql = "select * from ChiTiet_BienBao where id = 5";
 
         Cursor cursor  = db.rawQuery(sql ,null);
         while (cursor.moveToNext()){
             String ten = cursor.getString(1);
             String noidung = cursor.getString(2);
 
-            arrayList.add(new BienBaoHieuLenh(ten,noidung));
+            arrayList.add(new BienBaoPhu(ten,noidung));
         }
         return arrayList;
     }

@@ -22,7 +22,8 @@
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoCam" />
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoNguyHiem" />
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoHieuLenh" />
-        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoChiDan"></activity>
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoChiDan" />
+        <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_BienBaoPhu"></activity>
     </application>
 
 </manifest>

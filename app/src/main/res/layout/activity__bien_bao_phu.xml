@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoNguyHiem">
+    tools:context="com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoPhu">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,12 +13,12 @@
         android:background="#0DB6A9"
         android:textAlignment="center"
         app:titleTextColor="#FFFFFF"
-        app:title="Biển báo nguy hiểm">
+        app:title="Biển báo phụ">
 
     </android.support.v7.widget.Toolbar>
 
     <ListView
-        android:id="@+id/listview_bienbaonguyhiem"
+        android:id="@+id/listview_bienbaophu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">

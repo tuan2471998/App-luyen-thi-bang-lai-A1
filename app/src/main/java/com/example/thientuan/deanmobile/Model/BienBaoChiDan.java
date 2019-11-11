@@ -6,12 +6,20 @@ package com.example.thientuan.deanmobile.Model;
 
 public class BienBaoChiDan {
 
+    private String ten;
     private String noidung;
-    private int loaibien;
 
-    public BienBaoChiDan(String noidung, int loaibien) {
+    public BienBaoChiDan(String ten, String noidung) {
+        this.ten = ten;
         this.noidung = noidung;
-        this.loaibien = loaibien;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
     public String getNoidung() {
@@ -20,13 +28,5 @@ public class BienBaoChiDan {
 
     public void setNoidung(String noidung) {
         this.noidung = noidung;
-    }
-
-    public int getLoaibien() {
-        return loaibien;
-    }
-
-    public void setLoaibien(int loaibien) {
-        this.loaibien = loaibien;
     }
 }

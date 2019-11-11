@@ -11,17 +11,28 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:id="@+id/img_bienbaonguyhiem"
-            android:src="@drawable/bienbaocam_bopcoi" />
+            android:src="@drawable/bienbaocam_bopcoi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ten_bienbaonguyhiem"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img_bienbaonguyhiem"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/noidung_bienbaonguyhiem"
             android:padding="10dp"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@android:color/black"
-            android:layout_toRightOf="@id/img_bienbaonguyhiem" />
+            android:layout_below="@id/ten_bienbaonguyhiem"
+            android:layout_toRightOf="@id/img_bienbaonguyhiem"/>
 
     </RelativeLayout>
+
 
 </android.support.constraint.ConstraintLayout>

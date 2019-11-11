@@ -43,8 +43,10 @@ public class BienBaoCam_Adapter extends ArrayAdapter<BienBaoCam> {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         convertView = layoutInflater.inflate(R.layout.layout_row_bienbaocam, null);
 
+        TextView txt_ten = convertView.findViewById(R.id.ten_bienbaocam);
         TextView txt_noidung = convertView.findViewById(R.id.noidung_bienbaocam);
 
+        txt_ten.setText(arrayList.get(position).getTen());
         txt_noidung.setText(arrayList.get(position).getNoidung());
 
         return convertView;

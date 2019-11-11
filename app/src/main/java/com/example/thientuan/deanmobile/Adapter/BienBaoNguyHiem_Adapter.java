@@ -40,8 +40,10 @@ public class BienBaoNguyHiem_Adapter extends ArrayAdapter<BienBaoNguyHiem> {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         convertView = layoutInflater.inflate(R.layout.layout_row_bienbaonguyhiem, null);
 
+        TextView txt_ten = convertView.findViewById(R.id.ten_bienbaonguyhiem);
         TextView txt_noidung = convertView.findViewById(R.id.noidung_bienbaonguyhiem);
 
+        txt_ten.setText(arrayList.get(position).getTen());
         txt_noidung.setText(arrayList.get(position).getNoidung());
 
         return convertView;

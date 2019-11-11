@@ -16,6 +16,7 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
     private Button button_BienBaoNguyHiem;
     private Button button_BienBaoHieuLenh;
     private Button button_BienBaoChiDan;
+    private Button button_BienBaoPhu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,15 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent acti_bienbaochidan = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoChiDan.class);
                 startActivity(acti_bienbaochidan);
+            }
+        });
+
+        button_BienBaoPhu = (Button) findViewById(R.id.button_BienBaoPhu);
+        button_BienBaoPhu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_bienbaophu = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoPhu.class);
+                startActivity(acti_bienbaophu);
             }
         });
     }

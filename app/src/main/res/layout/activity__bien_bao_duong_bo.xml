@@ -45,7 +45,7 @@
                 android:layout_marginTop="8dp"
                 android:background="#ccd7f6"
                 android:gravity="center"
-                android:text="BIỆN BẢO HIỆU LỆNH"
+                android:text="BIỂN BÁO HIỆU LỆNH"
                 android:textAlignment="center"
                 android:textColor="#F000"
                 android:textSize="20dp"

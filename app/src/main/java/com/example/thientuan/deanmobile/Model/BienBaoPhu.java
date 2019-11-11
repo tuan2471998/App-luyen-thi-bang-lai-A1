@@ -1,14 +1,14 @@
 package com.example.thientuan.deanmobile.Model;
 
 /**
- * Created by J Nguyen on 11/10/2019.
+ * Created by J Nguyen on 11/11/2019.
  */
 
-public class BienBaoNguyHiem {
+public class BienBaoPhu {
     private String ten;
     private String noidung;
 
-    public BienBaoNguyHiem(String ten, String noidung) {
+    public BienBaoPhu(String ten, String noidung) {
         this.ten = ten;
         this.noidung = noidung;
     }

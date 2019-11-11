@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 
 public class DBHelper_BienBaoCam {
-    String DATABASE_NAME = "bienbao.sqlite";
+    String DATABASE_NAME = "TN_A1.db";
     private static final String DB_PATH_SUFFIX = "/databases/";
     SQLiteDatabase db = null;
 
@@ -76,14 +76,14 @@ public class DBHelper_BienBaoCam {
 
         db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
 
-        String sql = "select * from BIENBAO where loaibien = 2";
+        String sql = "select * from ChiTiet_BienBao where id = 1";
 
         Cursor cursor  = db.rawQuery(sql ,null);
         while (cursor.moveToNext()){
-            String noidung = cursor.getString(0);
-            int loaibien = cursor.getInt(1);
+            String ten = cursor.getString(1);
+            String noidung = cursor.getString(2);
 
-            arrayList.add(new BienBaoCam(noidung,loaibien));
+            arrayList.add(new BienBaoCam(ten,noidung));
         }
         return arrayList;
     }

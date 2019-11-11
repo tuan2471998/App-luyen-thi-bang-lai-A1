@@ -12,16 +12,26 @@
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:id="@+id/img_bienbaocam"
-            android:src="@drawable/bienbaocam_bopcoi" />
+            android:src="@drawable/bienbaocam_bopcoi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ten_bienbaocam"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img_bienbaocam"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/noidung_bienbaocam"
             android:padding="10dp"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@android:color/black"
-            android:layout_toRightOf="@id/img_bienbaocam" />
+            android:layout_below="@id/ten_bienbaocam"
+            android:layout_toRightOf="@id/img_bienbaocam"/>
 
     </RelativeLayout>
 
