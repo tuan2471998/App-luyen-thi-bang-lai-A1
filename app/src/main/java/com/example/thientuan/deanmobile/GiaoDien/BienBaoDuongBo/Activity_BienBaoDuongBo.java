@@ -17,6 +17,8 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
     private Button button_BienBaoHieuLenh;
     private Button button_BienBaoChiDan;
     private Button button_BienBaoPhu;
+    private Button button_VachKeDuong;
+    private Button button_TuyenDuongDoiNgoai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +74,24 @@ public class Activity_BienBaoDuongBo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent acti_bienbaophu = new Intent(Activity_BienBaoDuongBo.this, Activity_BienBaoPhu.class);
                 startActivity(acti_bienbaophu);
+            }
+        });
+
+        button_VachKeDuong = (Button) findViewById(R.id.button_VachKeDuong);
+        button_VachKeDuong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_vachkeduong = new Intent(Activity_BienBaoDuongBo.this, Activity_VachKeDuong.class);
+                startActivity(acti_vachkeduong);
+            }
+        });
+
+        button_TuyenDuongDoiNgoai = (Button) findViewById(R.id.button_TuyenDuongDoiNgoai);
+        button_TuyenDuongDoiNgoai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acti_tuyenduongdoingoai = new Intent(Activity_BienBaoDuongBo.this, Activity_TuyenDuongDoiNgoai.class);
+                startActivity(acti_tuyenduongdoingoai);
             }
         });
     }

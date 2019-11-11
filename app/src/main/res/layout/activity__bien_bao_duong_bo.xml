@@ -109,20 +109,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/button_BienBaoChiDan" />
 
             <Button
-                android:id="@+id/button_DuongCaoToc"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="8dp"
-                android:background="#ccd7f6"
-                android:gravity="center"
-                android:text="ĐƯỜNG CAO TỐC"
-                android:textAlignment="center"
-                android:textColor="#F000"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/button_VachKeDuong" />
-
-            <Button
                 android:id="@+id/button_TuyenDuongDoiNgoai"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -134,7 +120,7 @@
                 android:textColor="#F000"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@+id/button_DuongCaoToc" />
+                app:layout_constraintTop_toBottomOf="@+id/button_VachKeDuong" />
 
 
         </android.support.constraint.ConstraintLayout>
