@@ -1,5 +1,6 @@
 package com.example.thientuan.deanmobile.GiaoDien.Luat;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,6 +13,7 @@ public class Activity_Luat extends AppCompatActivity {
 
     Button button_bottom_sheet_luat;
     android.support.v7.widget.Toolbar toolbar;
+    Button button_XeDap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,9 @@ public class Activity_Luat extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow);
+
+
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

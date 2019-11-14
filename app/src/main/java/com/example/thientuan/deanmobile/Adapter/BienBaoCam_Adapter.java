@@ -59,6 +59,7 @@ public class BienBaoCam_Adapter extends ArrayAdapter<BienBaoCam> {
             R.drawable.bienbaocam_chieudaioto,
             R.drawable.bienbaocam_chieudairomoc,
             R.drawable.bienbaocam_khoangcachgiuahaixe,
+            R.drawable.bienbaocam_dunglai,
             R.drawable.bienbaocam_quayxe,
             R.drawable.bienbaocam_otoquayxe,
             R.drawable.bienbaocam_camvuot,
