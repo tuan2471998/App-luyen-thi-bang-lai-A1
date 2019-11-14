@@ -10,8 +10,7 @@
         <ImageView
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:id="@+id/img_bienbaohieulenh"
-            android:src="@drawable/bienbaocam_bopcoi"/>
+            android:id="@+id/img_bienbaohieulenh" />
 
         <TextView
             android:layout_width="match_parent"

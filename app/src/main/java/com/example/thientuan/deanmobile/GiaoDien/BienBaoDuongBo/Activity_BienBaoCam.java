@@ -1,5 +1,7 @@
 package com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
@@ -10,6 +12,8 @@ import com.example.thientuan.deanmobile.Model.BienBaoCam;
 import com.example.thientuan.deanmobile.R;
 
 import java.util.ArrayList;
+
+import static java.security.AccessController.getContext;
 
 public class Activity_BienBaoCam extends AppCompatActivity {
 
@@ -36,4 +40,5 @@ public class Activity_BienBaoCam extends AppCompatActivity {
 
         registerForContextMenu(listView);
     }
+
 }
