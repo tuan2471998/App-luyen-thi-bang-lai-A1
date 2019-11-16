@@ -16,14 +16,31 @@
             android:padding="5dp"
             android:textColor="@android:color/black" />
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_hethongbienbao"
+            android:layout_below="@id/cauhoi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dapan"
+            android:layout_below="@id/img_hethongbienbao"
+            android:text="Đáp án: "
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/traloi"
-            android:textSize="16dp"
-            android:layout_below="@id/cauhoi"
-            android:padding="5dp"
+            android:id="@+id/cautraloi"
+            android:textSize="18dp"
+            android:layout_below="@id/img_hethongbienbao"
+            android:layout_toRightOf="@id/dapan"
+            android:layout_alignBottom="@id/dapan"
             android:textStyle="bold"
             android:textColor="@android:color/holo_red_dark"/>
     </RelativeLayout>

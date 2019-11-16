@@ -27,7 +27,10 @@
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_VachKeDuong" />
         <activity android:name=".GiaoDien.BienBaoDuongBo.Activity_TuyenDuongDoiNgoai" />
         <activity android:name=".GiaoDien.Luat.Activity_LuatXeDap" />
-        <activity android:name=".GiaoDien.HocLyThuyet.Activity_KhaiNiemVaQuyTac"></activity>
+        <activity android:name=".GiaoDien.HocLyThuyet.Activity_KhaiNiemVaQuyTac" />
+        <activity android:name=".GiaoDien.HocLyThuyet.Activity_HeThongBienBao" />
+        <activity android:name=".GiaoDien.HocLyThuyet.Activity_SaHinh" />
+        <activity android:name=".GiaoDien.HocLyThuyet.Activity_DaoDuc"></activity>
     </application>
 
 </manifest>

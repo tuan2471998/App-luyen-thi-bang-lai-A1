@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
+import com.example.thientuan.deanmobile.Model.HeThongBienBao;
 import com.example.thientuan.deanmobile.Model.KhaiNiemVaQuyTac;
 
 import java.io.File;
@@ -14,17 +15,17 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 /**
- * Created by J Nguyen on 11/14/2019.
+ * Created by ThienTuan on 15/11/2019.
  */
 
-public class DBHelper_KhaiNiemVaQuyTac {
+public class DBHelper_HeThongBienBao {
     String DATABASE_NAME = "TN_A1.db";
     private static final String DB_PATH_SUFFIX = "/databases/";
     SQLiteDatabase db = null;
 
     Context context;
 
-    public DBHelper_KhaiNiemVaQuyTac(Context context) {
+    public DBHelper_HeThongBienBao(Context context) {
         this.context = context;
         processSQLite();
     }
@@ -71,19 +72,19 @@ public class DBHelper_KhaiNiemVaQuyTac {
     private String getPathDatabaseSystem() {
         return context.getApplicationInfo().dataDir + DB_PATH_SUFFIX + DATABASE_NAME;
     }
-    public ArrayList<KhaiNiemVaQuyTac> getAllKhaiNiem(){
-        ArrayList<KhaiNiemVaQuyTac> arrayList = new ArrayList<>();
+    public ArrayList<HeThongBienBao> getAllHeThongBienBao(){
+        ArrayList<HeThongBienBao> arrayList = new ArrayList<>();
 
         db = context.openOrCreateDatabase(DATABASE_NAME,context.MODE_PRIVATE,null);
 
-        String sql = "select * from LyThuyet where LoaiLT = 1";
+        String sql = "select * from LyThuyet where LoaiLT = 2";
 
         Cursor cursor  = db.rawQuery(sql ,null);
         while (cursor.moveToNext()){
             String cauhoi = cursor.getString(1);
             String cautraloi = cursor.getString(2);
 
-            arrayList.add(new KhaiNiemVaQuyTac(cauhoi, cautraloi));
+            arrayList.add(new HeThongBienBao(cauhoi, cautraloi));
         }
         return arrayList;
     }

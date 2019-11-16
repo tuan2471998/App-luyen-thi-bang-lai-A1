@@ -4,12 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.thientuan.deanmobile.Adapter.BienBaoCam_Adapter;
 import com.example.thientuan.deanmobile.Adapter.KhaiNiemVaQuyTac_Adapter;
-import com.example.thientuan.deanmobile.Database.DBHelper_BienBaoCam;
 import com.example.thientuan.deanmobile.Database.DBHelper_KhaiNiemVaQuyTac;
-import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoCam;
-import com.example.thientuan.deanmobile.Model.BienBaoCam;
 import com.example.thientuan.deanmobile.Model.KhaiNiemVaQuyTac;
 import com.example.thientuan.deanmobile.R;
 

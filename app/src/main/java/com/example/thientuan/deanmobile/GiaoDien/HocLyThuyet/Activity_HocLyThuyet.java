@@ -14,6 +14,10 @@ public class Activity_HocLyThuyet extends AppCompatActivity {
 
     android.support.v7.widget.Toolbar toolbar;
     Button button_KhaiNiemVaQuyTac;
+    Button button_HeThongBienBaoDuongBo;
+    Button button_SaHinh;
+    Button button_DaoDuc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,33 @@ public class Activity_HocLyThuyet extends AppCompatActivity {
             public void onClick(View view) {
                 Intent acti_KhaiNiemVaQuyTac = new Intent(Activity_HocLyThuyet.this, Activity_KhaiNiemVaQuyTac.class);
                 startActivity(acti_KhaiNiemVaQuyTac);
+            }
+        });
+
+        button_HeThongBienBaoDuongBo = (Button)findViewById(R.id.button_HeThongBienBaoDuongBo);
+        button_HeThongBienBaoDuongBo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent acti_HeThongBienBao = new Intent(Activity_HocLyThuyet.this, Activity_HeThongBienBao.class);
+                startActivity(acti_HeThongBienBao);
+            }
+        });
+
+        button_SaHinh = (Button)findViewById(R.id.button_SaHinh);
+        button_SaHinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent acti_SaHinh = new Intent(Activity_HocLyThuyet.this, Activity_SaHinh.class);
+                startActivity(acti_SaHinh);
+            }
+        });
+
+        button_DaoDuc = (Button)findViewById(R.id.button_DaoDuc);
+        button_DaoDuc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent acti_DaoDuc = new Intent(Activity_HocLyThuyet.this, Activity_DaoDuc.class);
+                startActivity(acti_DaoDuc);
             }
         });
     }
