@@ -9,8 +9,9 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="5dp"
             android:id="@+id/img_bienbaocam" />
 
         <TextView
@@ -18,16 +19,19 @@
             android:layout_height="wrap_content"
             android:id="@+id/ten_bienbaocam"
             android:padding="10dp"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:layout_toRightOf="@id/img_bienbaocam"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/noidung_bienbaocam"
-            android:padding="10dp"
-            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18dp"
             android:textColor="@android:color/black"
             android:layout_below="@id/ten_bienbaocam"
             android:layout_toRightOf="@id/img_bienbaocam"/>

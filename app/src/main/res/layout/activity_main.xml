@@ -57,6 +57,7 @@
             android:text="Học bài mới"
             android:textSize="25dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:textAlignment="center"/>
 
         <ImageButton
@@ -80,6 +81,7 @@
             android:layout_below="@id/imageButton_bienbao"
             android:text="Biển báo đường bộ"
             android:textSize="25dp"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
             android:textAlignment="center"/>
 
@@ -102,6 +104,7 @@
             android:text="Luật"
             android:textSize="25dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:textAlignment="center"/>
 
         <ImageButton
@@ -122,6 +125,7 @@
             android:text="Đề luyện thi"
             android:textSize="25dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:textAlignment="center"/>
     </RelativeLayout>
 </android.support.v4.widget.DrawerLayout>

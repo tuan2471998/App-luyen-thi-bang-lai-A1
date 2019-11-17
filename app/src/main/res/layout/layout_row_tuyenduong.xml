@@ -10,23 +10,28 @@
         <ImageView
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:id="@+id/img_tuyenduong" />
+            android:paddingLeft="5dp"
+            android:id="@+id/img_tuyenduong"
+            android:src="@mipmap/ic_launcher"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ten_tuyenduong"
             android:padding="10dp"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:layout_toRightOf="@id/img_tuyenduong"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/noidung_tuyenduong"
-            android:padding="10dp"
-            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18dp"
             android:textColor="@android:color/black"
             android:layout_below="@id/ten_tuyenduong"
             android:layout_toRightOf="@id/img_tuyenduong"/>

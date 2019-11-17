@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.thientuan.deanmobile.Model.TuyenDuongDoiNgoai;
@@ -23,6 +24,11 @@ public class TuyenDuongDoiNgoai_Adapter extends ArrayAdapter<TuyenDuongDoiNgoai>
     int layout;
     ArrayList<TuyenDuongDoiNgoai> arrayList;
 
+//    int[] image = {R.drawable.doingoai_1,
+//            R.drawable.doingoai_2,
+//            R.drawable.doingoai_3,
+//            R.drawable.doingoai_4};
+
     public TuyenDuongDoiNgoai_Adapter(Context context, int resource, ArrayList<TuyenDuongDoiNgoai> object){
         super(context, resource, object);
         this.context = context;
@@ -38,9 +44,11 @@ public class TuyenDuongDoiNgoai_Adapter extends ArrayAdapter<TuyenDuongDoiNgoai>
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         convertView = layoutInflater.inflate(R.layout.layout_row_tuyenduong, null);
 
+        ImageView img = convertView.findViewById(R.id.img_tuyenduong);
         TextView txt_ten = convertView.findViewById(R.id.ten_tuyenduong);
         TextView txt_noidung = convertView.findViewById(R.id.noidung_tuyenduong);
 
+//        img.setImageResource(image[position]);
         txt_ten.setText(arrayList.get(position).getTen());
         txt_noidung.setText(arrayList.get(position).getNoidung());
 

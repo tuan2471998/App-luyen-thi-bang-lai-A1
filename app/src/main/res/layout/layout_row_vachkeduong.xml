@@ -8,28 +8,34 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:id="@+id/img_vachkeduong" />
+            android:id="@+id/img_vachkeduong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ten_vachkeduong"
             android:padding="10dp"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:textStyle="bold"
-            android:layout_toRightOf="@id/img_vachkeduong"/>
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_below="@id/img_vachkeduong"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/noidung_vachkeduong"
-            android:padding="10dp"
-            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textSize="18dp"
             android:textColor="@android:color/black"
-            android:layout_below="@id/ten_vachkeduong"
-            android:layout_toRightOf="@id/img_vachkeduong"/>
+            android:layout_below="@id/ten_vachkeduong" />
 
     </RelativeLayout>
 
