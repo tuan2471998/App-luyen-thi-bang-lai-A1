@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_TuyenDuongDoiNgoai">
+    tools:context="com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_LuatXeMay">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,12 +13,12 @@
         android:background="#0DB6A9"
         android:textAlignment="center"
         app:titleTextColor="#FFFFFF"
-        app:title="Tuyến đường đối ngoài">
+        app:title="Luật xe mô tô, xe gắn máy">
 
     </android.support.v7.widget.Toolbar>
 
     <ListView
-        android:id="@+id/listview_tuyenduong"
+        android:id="@+id/listview_luatxemay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">

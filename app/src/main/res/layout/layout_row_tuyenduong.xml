@@ -8,9 +8,11 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:id="@+id/img_tuyenduong"
             android:src="@mipmap/ic_launcher"/>
 

@@ -13,7 +13,6 @@ public class Activity_Luat extends AppCompatActivity {
 
     Button button_bottom_sheet_luat;
     android.support.v7.widget.Toolbar toolbar;
-    Button button_XeDap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -4,11 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.thientuan.deanmobile.Adapter.BienBaoCam_Adapter;
 import com.example.thientuan.deanmobile.Adapter.LuatXeDap_Adapter;
-import com.example.thientuan.deanmobile.Database.DBHelper_BienBaoCam;
 import com.example.thientuan.deanmobile.Database.DBHelper_LuatXeDap;
-import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoCam;
 import com.example.thientuan.deanmobile.Model.LuatXeDap;
 import com.example.thientuan.deanmobile.R;
 
@@ -28,7 +25,7 @@ public class Activity_LuatXeDap extends AppCompatActivity {
 
         db = new DBHelper_LuatXeDap(Activity_LuatXeDap.this);
 
-        listView = (ListView) findViewById(R.id.listview_bienbaocam);
+        listView = (ListView) findViewById(R.id.listview_luatxedap);
 
         arrayList = db.getAllLuatXeDap();
 

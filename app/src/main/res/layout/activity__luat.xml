@@ -6,25 +6,81 @@
     android:layout_height="match_parent"
     tools:context="com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#0DB6A9"
-        android:textAlignment="center"
-        app:titleTextColor="#FFFFFF"
-        app:title="Tra cứu luật">
+        android:layout_height="match_parent">
 
-    </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0DB6A9"
+            android:textAlignment="center"
+            app:title="Tra cứu luật"
+            app:titleTextColor="#FFFFFF">
+
+        </android.support.v7.widget.Toolbar>
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="LUẬT"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:gravity="center"
+            android:text="GIAO THÔNG ĐƯỜNG BỘ"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Căn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 1992 đã được sửa đổi, bổ sung một số điều theo Nghị quyết số 51/2001/QH10; Quốc hội ban hành Luật giao thông đường bộ."
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:layout_below="@id/textView3"
+            android:src="@drawable/csgt" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button_bottom_sheet_luat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Danh sách luật"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
         android:background="#0DB6A9"
+        android:text="Danh sách luật"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

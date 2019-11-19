@@ -24,10 +24,14 @@ public class TuyenDuongDoiNgoai_Adapter extends ArrayAdapter<TuyenDuongDoiNgoai>
     int layout;
     ArrayList<TuyenDuongDoiNgoai> arrayList;
 
-//    int[] image = {R.drawable.doingoai_1,
-//            R.drawable.doingoai_2,
-//            R.drawable.doingoai_3,
-//            R.drawable.doingoai_4};
+    int[] image = {R.drawable.doingoai_1,
+            R.drawable.doingoai_2,
+            R.drawable.doingoai_3,
+            R.drawable.doingoai_4,
+            R.drawable.doingoai_5,
+            R.drawable.doingoai_6,
+            R.drawable.doingoai_7,
+            R.drawable.doingoai_8};
 
     public TuyenDuongDoiNgoai_Adapter(Context context, int resource, ArrayList<TuyenDuongDoiNgoai> object){
         super(context, resource, object);
@@ -48,7 +52,7 @@ public class TuyenDuongDoiNgoai_Adapter extends ArrayAdapter<TuyenDuongDoiNgoai>
         TextView txt_ten = convertView.findViewById(R.id.ten_tuyenduong);
         TextView txt_noidung = convertView.findViewById(R.id.noidung_tuyenduong);
 
-//        img.setImageResource(image[position]);
+        img.setImageResource(image[position]);
         txt_ten.setText(arrayList.get(position).getTen());
         txt_noidung.setText(arrayList.get(position).getNoidung());
 

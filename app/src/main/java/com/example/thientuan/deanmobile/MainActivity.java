@@ -19,6 +19,7 @@ import com.example.thientuan.deanmobile.Database.DBHelper_BienBaoCam;
 import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
 import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
 import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat;
+import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_LuatXeDap;
 
 public class MainActivity extends AppCompatActivity {
 
