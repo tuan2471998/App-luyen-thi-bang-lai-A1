@@ -32,7 +32,8 @@
         <activity android:name=".GiaoDien.HocLyThuyet.Activity_SaHinh" />
         <activity android:name=".GiaoDien.HocLyThuyet.Activity_DaoDuc" />
         <activity android:name=".GiaoDien.Luat.Activity_LuatXeMay" />
-        <activity android:name=".GiaoDien.Luat.Activity_SaiPhamKhac"></activity>
+        <activity android:name=".GiaoDien.Luat.Activity_SaiPhamKhac" />
+        <activity android:name=".TracNghiem.Cau1.Activity_Bai1"></activity>
     </application>
 
 </manifest>
