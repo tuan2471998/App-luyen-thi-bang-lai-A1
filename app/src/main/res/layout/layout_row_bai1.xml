@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stt"
+            android:text="so thu tu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cauhoi"
+            android:layout_below="@id/stt"
+            android:text="Câu hỏi"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dapan1"
+            android:layout_below="@id/cauhoi"
+            android:text="Dap an 1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dapan2"
+            android:layout_below="@id/dapan1"
+            android:text="Dap an 2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dapan3"
+            android:layout_below="@id/dapan2"
+            android:text="Dap an 3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dapan4"
+            android:layout_below="@id/dapan3"
+            android:text="Dap an 4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0DB6A9"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="#0DB6A9"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="#0DB6A9"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

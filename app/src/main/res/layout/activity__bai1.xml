@@ -1,60 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.thientuan.deanmobile.TracNghiem.Cau1.Activity_Bai1">
+    tools:context="com.example.thientuan.deanmobile.GiaoDien.BaiThiThu.Activity_Bai1">
 
-    <TextView
-        android:id="@+id/stt"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:text="stt"
-        android:layout_marginTop="60dp"/>
+        android:background="#0DB6A9"
+        android:textAlignment="center"
+        app:titleTextColor="#FFFFFF"
+        app:title="Bài 1">
 
-    <TextView
-        android:id="@+id/cauhoi"
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage_bai1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@id/stt"
-        android:layout_marginTop="20dp"
-        android:text="cau hoi"
-        android:textSize="30dp"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
 
-    <Button
-        android:id="@+id/dapan1"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/cauhoi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+    </android.support.v4.view.ViewPager>
 
-    <Button
-        android:id="@+id/dapan2"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/dapan1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"/>
-
-    <Button
-        android:id="@+id/dapan3"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/dapan2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"/>
-
-    <Button
-        android:id="@+id/dapan4"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/dapan3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"/>
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
