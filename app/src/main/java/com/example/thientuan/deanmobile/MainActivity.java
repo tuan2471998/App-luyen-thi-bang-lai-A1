@@ -20,7 +20,6 @@ import com.example.thientuan.deanmobile.GiaoDien.BaiThiThu.Activity_BaiThiThu1;
 import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
 import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
 import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat;
-import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_LuatXeDap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,13 +88,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //ImageButton_Deluyenthi
         imageButton_deluyenthi = (ImageButton) findViewById(R.id.imageButton_deluyenthi);
         imageButton_deluyenthi.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent acti_deluyenthi = new Intent(MainActivity.this, Activity_BaiThiThu1.class);
-                startActivity(acti_deluyenthi);
+            public void onClick(View view) {
+                Intent acti_baithithu = new Intent(MainActivity.this, Activity_BaiThiThu1.class);
+                startActivity(acti_baithithu);
             }
         });
     }
