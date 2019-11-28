@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/stt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số thứ tự"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/cauhoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stt"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/dapan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cauhoi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:id="@+id/dapan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dapan1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:id="@+id/dapan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dapan2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <CheckBox
+            android:id="@+id/dapan4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dapan3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/dapandung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dapan4"
+            android:visibility="invisible"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+</RelativeLayout>

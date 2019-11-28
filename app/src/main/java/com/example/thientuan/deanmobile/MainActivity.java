@@ -16,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.thientuan.deanmobile.Database.DBHelper_BienBaoCam;
+import com.example.thientuan.deanmobile.GiaoDien.BaiThiThu.Activity_BaiThiThu1;
 import com.example.thientuan.deanmobile.GiaoDien.BienBaoDuongBo.Activity_BienBaoDuongBo;
 import com.example.thientuan.deanmobile.GiaoDien.HocLyThuyet.Activity_HocLyThuyet;
 import com.example.thientuan.deanmobile.GiaoDien.Luat.Activity_Luat;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton_hocbaimoi;
     ImageButton imageButton_bienbao;
     ImageButton imageButton_luat;
+    ImageButton imageButton_deluyenthi;
     Toolbar toolbar;
     DBHelper_BienBaoCam dbHelper;
 
@@ -84,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent acti_luat = new Intent(MainActivity.this, Activity_Luat.class);
                 startActivity(acti_luat);
+            }
+        });
+
+        //ImageButton_Deluyenthi
+        imageButton_deluyenthi = (ImageButton) findViewById(R.id.imageButton_deluyenthi);
+        imageButton_deluyenthi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent acti_deluyenthi = new Intent(MainActivity.this, Activity_BaiThiThu1.class);
+                startActivity(acti_deluyenthi);
             }
         });
     }
