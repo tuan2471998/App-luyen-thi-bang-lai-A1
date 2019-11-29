@@ -14,24 +14,21 @@ import android.widget.TextView;
 
 import com.example.thientuan.deanmobile.R;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Activity_BaiThiThu1 extends FragmentActivity {
-    /**
-     * The number of pages (wizard steps) to show in this demo.
-     */
+
     private static final int NUM_PAGES = 20;
 
-    /**
-     * The pager widget, which handles animation and allows swiping horizontally to access previous
-     * and next wizard steps.
-     */
     private ViewPager mPager;
 
-    /**
-     * The pager adapter, which provides the pages to the view pager widget.
-     */
     private PagerAdapter pagerAdapter;
+
+    BaiThiThu_Controller baiThiThu_controller;
+    ArrayList<BaiThiThu1> arrayList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +40,23 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(pagerAdapter);
         mPager.setPageTransformer(true, new DepthPageTransformer());
+
+        baiThiThu_controller = new BaiThiThu_Controller(this);
+        arrayList = new ArrayList<BaiThiThu1>();
+        Random rd = new Random();
+        arrayList = baiThiThu_controller.getAllBaiThiThu(rd.nextInt(3) + 1);
+
+
+        DBHelper_BaiThiThu1 db = new DBHelper_BaiThiThu1(this);
+        try {
+            db.createDataBase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public ArrayList<BaiThiThu1> getData(){
+        return arrayList;
     }
 
     @Override
@@ -68,7 +82,8 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return new Fragment_BaiThiThu1();
+
+            return Fragment_BaiThiThu1.create(position);
         }
 
         @Override
