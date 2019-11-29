@@ -44,7 +44,7 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
         baiThiThu_controller = new BaiThiThu_Controller(this);
         arrayList = new ArrayList<BaiThiThu1>();
         Random rd = new Random();
-        arrayList = baiThiThu_controller.getAllBaiThiThu(rd.nextInt(3) + 1);
+        arrayList = baiThiThu_controller.getAllBaiThiThu(rd.nextInt(6) + 1);
 
 
         DBHelper_BaiThiThu1 db = new DBHelper_BaiThiThu1(this);

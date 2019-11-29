@@ -27,7 +27,7 @@ public class Fragment_BaiThiThu1 extends Fragment {
 
     TextView stt, cauhoi;
     RadioGroup radioGroup;
-    RadioButton dapan1, dapan2, dapan3, dapan4;
+    RadioButton dapan1, dapan2, dapan3;
 
     public Fragment_BaiThiThu1() {
         // Required empty public constructor
@@ -45,7 +45,6 @@ public class Fragment_BaiThiThu1 extends Fragment {
         dapan1 = (RadioButton)rootView.findViewById(R.id.dapan1);
         dapan2 = (RadioButton)rootView.findViewById(R.id.dapan2);
         dapan3 = (RadioButton)rootView.findViewById(R.id.dapan3);
-        dapan4 = (RadioButton)rootView.findViewById(R.id.dapan4);
         radioGroup = (RadioGroup)rootView.findViewById(R.id.radioGroup);
 
         return rootView;
@@ -77,6 +76,5 @@ public class Fragment_BaiThiThu1 extends Fragment {
         dapan1.setText(arrayList.get(Pagenumber).getDapan1());
         dapan2.setText(arrayList.get(Pagenumber).getDapan2());
         dapan3.setText(arrayList.get(Pagenumber).getDapan3());
-        dapan4.setText(arrayList.get(Pagenumber).getDapan4());
     }
 }
