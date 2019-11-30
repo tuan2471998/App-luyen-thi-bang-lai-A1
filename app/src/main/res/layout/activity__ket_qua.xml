@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thientuan.deanmobile.GiaoDien.BaiThiThu.Activity_KetQua">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ketqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:id="@+id/caudung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số câu đúng:"
+            android:layout_below="@id/ketqua"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/causai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số câu sai:"
+            android:layout_below="@id/caudung"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/cauchuatraloi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số câu chưa trả lời:"
+            android:layout_below="@id/causai"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tongdiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng điểm:"
+            android:layout_below="@id/cauchuatraloi"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/socaudung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/caudung"
+            android:layout_below="@id/ketqua"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/socausai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/causai"
+            android:layout_below="@id/socaudung"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/socauchuatraloi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/cauchuatraloi"
+            android:layout_below="@id/socausai"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/sodiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_toRightOf="@id/tongdiem"
+            android:layout_below="@id/socauchuatraloi"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tongdiem">
+
+            <Button
+                android:text="Làm lại"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLamLai"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Thoát"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnThoat"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
