@@ -33,7 +33,7 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
 
     private TextView tvTimer;
 
-    private Button btnNopBai, btnXemDiem, btnCauHoi;
+    private Button btnNopBai, btnXemDiem, btnCauHoi, btnDong;
 
     public int checkAns = 0;
 
@@ -95,6 +95,8 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
                 CheckAnswer();
             }
         });
+
+
     }
 
     public ArrayList<BaiThiThu1> getData(){
@@ -223,12 +225,20 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
 
         DanhSach_Adapter danhSach_adapter = new DanhSach_Adapter(arrayList, this);
         GridView gvDanhSach = (GridView)dialog.findViewById(R.id.gvDanhSach);
+        btnDong = (Button) dialog.findViewById(R.id.btnDong);
         gvDanhSach.setAdapter(danhSach_adapter);
 
         gvDanhSach.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 mPager.setCurrentItem(position);
+                dialog.dismiss();
+            }
+        });
+
+        btnDong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 dialog.dismiss();
             }
         });
