@@ -9,6 +9,7 @@ import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
  */
 public class Fragment_BaiThiThu1 extends Fragment {
 
-    ArrayList<BaiThiThu1> arrayList;
+    ArrayList<BaiThiThu1> arrayList_quest;
     public static final String ARG_PAGE = "page";
     public static final String ARG_CHECKANSWER = "checkAnswer";
     private int Pagenumber;
@@ -31,6 +32,7 @@ public class Fragment_BaiThiThu1 extends Fragment {
     TextView stt, cauhoi;
     RadioGroup radioGroup;
     RadioButton dapan1, dapan2, dapan3;
+    ImageView img_cauhoi;
 
     public Fragment_BaiThiThu1() {
         // Required empty public constructor
@@ -48,6 +50,7 @@ public class Fragment_BaiThiThu1 extends Fragment {
         dapan1 = (RadioButton)rootView.findViewById(R.id.dapan1);
         dapan2 = (RadioButton)rootView.findViewById(R.id.dapan2);
         dapan3 = (RadioButton)rootView.findViewById(R.id.dapan3);
+        img_cauhoi = (ImageView)rootView.findViewById(R.id.hinhanh_cauhoi);
         radioGroup = (RadioGroup)rootView.findViewById(R.id.radioGroup);
 
         return rootView;
@@ -57,9 +60,9 @@ public class Fragment_BaiThiThu1 extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        arrayList = new ArrayList<BaiThiThu1>();
+        arrayList_quest = new ArrayList<BaiThiThu1>();
         Activity_BaiThiThu1 activity_baiThiThu1 = (Activity_BaiThiThu1) getActivity();
-        arrayList = activity_baiThiThu1.getData();
+        arrayList_quest = activity_baiThiThu1.getData();
         Pagenumber = getArguments().getInt(ARG_PAGE);
         checkAns = getArguments().getInt(ARG_CHECKANSWER);
     }
@@ -77,10 +80,18 @@ public class Fragment_BaiThiThu1 extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         stt.setText("Câu " + (Pagenumber+1));
-        cauhoi.setText(arrayList.get(Pagenumber).getNoidung());
+        cauhoi.setText(arrayList_quest.get(Pagenumber).getNoidung());
         dapan1.setText(getItem(Pagenumber).getDapan1());
         dapan2.setText(getItem(Pagenumber).getDapan2());
         dapan3.setText(getItem(Pagenumber).getDapan3());
+
+        int id = getResources().getIdentifier(getItem(Pagenumber).getImage()+"","drawable", "com.example.thientuan.deanmobile");
+        if(id == 0)
+        {
+            img_cauhoi.setVisibility(View.GONE);
+        } else {
+            img_cauhoi.setImageResource(id);
+        }
 
         if(checkAns != 0){
             dapan1.setClickable(false);
@@ -89,17 +100,17 @@ public class Fragment_BaiThiThu1 extends Fragment {
             getCheckAns(getItem(Pagenumber).getDapandung().toString());
         }
 
-//        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                getItem(Pagenumber).choiceID = checkedId;
-//                getItem(Pagenumber).setTraloi(getChoiceFromID(checkedId));
-//            }
-//        });
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                getItem(Pagenumber).choiceID = checkedId;
+                getItem(Pagenumber).setTraloi(getChoiceFromID(checkedId));
+            }
+        });
     }
 
     public BaiThiThu1 getItem(int position){
-        return arrayList.get(position);
+        return arrayList_quest.get(position);
     }
 
     private String getChoiceFromID(int ID) {

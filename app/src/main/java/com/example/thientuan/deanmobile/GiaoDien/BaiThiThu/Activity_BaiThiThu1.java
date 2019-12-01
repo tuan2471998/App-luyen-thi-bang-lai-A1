@@ -1,5 +1,6 @@
 package com.example.thientuan.deanmobile.GiaoDien.BaiThiThu;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
@@ -10,7 +11,9 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import com.example.thientuan.deanmobile.R;
@@ -30,7 +33,7 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
 
     private TextView tvTimer;
 
-    private Button btnNopBai, btnXemDiem;
+    private Button btnNopBai, btnXemDiem, btnCauHoi;
 
     public int checkAns = 0;
 
@@ -82,6 +85,14 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
                 Intent acti_xemdiem = new Intent(Activity_BaiThiThu1.this, Activity_KetQua.class);
                 acti_xemdiem.putExtra("arrayList", arrayList);
                 startActivity(acti_xemdiem);
+            }
+        });
+
+        btnCauHoi = (Button) findViewById(R.id.btnCauHoi);
+        btnCauHoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CheckAnswer();
             }
         });
     }
@@ -202,5 +213,26 @@ public class Activity_BaiThiThu1 extends FragmentActivity {
 
         btnXemDiem.setVisibility(View.VISIBLE);
         btnNopBai.setVisibility(View.GONE);
+    }
+
+    public  void CheckAnswer()
+    {
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.danhsach_dialog);
+        dialog.setTitle("Danh sách câu trả lời");
+
+        DanhSach_Adapter danhSach_adapter = new DanhSach_Adapter(arrayList, this);
+        GridView gvDanhSach = (GridView)dialog.findViewById(R.id.gvDanhSach);
+        gvDanhSach.setAdapter(danhSach_adapter);
+
+        gvDanhSach.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                mPager.setCurrentItem(position);
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }

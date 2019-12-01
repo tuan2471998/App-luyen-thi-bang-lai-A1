@@ -39,11 +39,19 @@
                 android:layout_below="@id/stt"
                 android:text="cau hoi"/>
 
+            <ImageView
+                android:id="@+id/hinhanh_cauhoi"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cauhoi"
+                android:visibility="visible"/>
+
             <RadioGroup
                 android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cauhoi">
+                android:layout_below="@id/hinhanh_cauhoi">
 
                 <RadioButton
                     android:id="@+id/dapan1"
